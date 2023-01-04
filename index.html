@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+    <meta property="og:title" content="Codificado de texto By Raúl Trueba">
+    <meta property="og:description" content="App online que permite crear textos codificados (secretos), y ser enviados por app de mensajes.">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta property="og:url" content="https://www.linkedin.com/in/deepfx/">
+    <meta property="og:type" content="App para web">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de mensajes con WhatsApp</title>
+    <script src = "https://unpkg.com/sweetalert/dist/sweetalert.min.js" ></script> 
+</head>
+<body>  
+    <header class="cabecera" id="cabeza">
+        <img src="images/logoalura.svg" alt="Logo Alura Inicial A"><h1>Encriptador para mensajes de texto</h1>
+    </header>
+
+    <main>
+        <section class="contenedor-1" id="seccion-paso1">
+            <div class="captura">
+                <h2 class="titulo-h2">Paso 1 de 2</h2>
+                <p>Escribe el mensaje que deseas encriptar</p>
+                <textarea id="cajaTexto" class="input-texto" cols="5" rows="3" type="text" placeholder="Tu mensaje AQUÍ" label="required" autofocus></textarea>
+                <div class="aviso">
+                    <img src="images/signo.svg" alt="Aviso minúsculas sin acento">Solo letras minúsculas y sin acentos.
+                </div>                
+                <div class="botones">
+                    <p>Haz click en el botón de la opción que deseas (encriptar / desencriptar).</p>
+                    <button id="btn-encriptar" class="encriptar" onclick="encriptado()">Encriptar</button>
+                    <button id="btn-desencriptar" class="desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>                
+            </div>
+
+            <div>
+                <div class="seccion-2">
+                    <article id="textoSalida">
+                        <div id="textoSalidaB">
+                            <img id="imacod" src="images/navegador.png" alt="Encriptación">
+                            <h2>No hay ningún mensaje a encriptar</h2>
+                            <p>Escribe el mensaje que quieres ocultar y enviar por WhatsApp</p>
+                        </div>
+                    </article>
+                    <div style="visibility: hidden;" id="seccion-bcopiar">                        
+                        <button style="visibility: hidden" id="copiar" class="botCopiar" onclick="copiar()">Copiar</button>                        
+                    </div>                    
+                </div>
+            </div>
+        </section>
+
+        <section id="boton-enviar-mensanje" class="seccion-boton-enviar-mensaje" style="visibility: hidden;">
+            <button  id="enviar" style="visibility: hidden;" onclick="enviar()" class="boton-enviar">Enviar mensaje</button>
+        </section>
+
+        <section id="whatsapp" class="contenedor-2">
+            <div class="captura-2">
+                <h2 class="titulo-3-h1">Enviar mensaje por WhatsApp</h2>
+                <br><br>
+                <h2 class="titulo-2-h2">Paso 2 de 2</h2>
+                <p id="mensaje-enviarP" class="mensaje-enviar">cc</p>
+                <p class="mensaje-enviar">Número de WhatsApp destino (país-área-número - sin espacios):</p>
+                <input id="num-tel-wa" type="tel" class="input-tel" placeholder="Ejemplo: 52 55 123456..">
+                <button  id="boton-mensaje-wa" onclick="enviarwa()" class="boton-enviar">Enviar mensaje</button>
+                <div>
+                    <button  id="boton-regresar" onclick="regresarcodif()" class="boton-regresar">Regresar</button>
+                    <button  id="boton-recargar" onclick="regrecargar()" class="boton-regresar">Recargar página</button>
+            </div> 
+            </section>                              
+        </section>
+
+    </main>    
+    <footer id="footer">
+        <p>Proyecto para portafolio profesional de Raúl Trueba Mejía dicienbre de 2022 - 2023.</p>
+            <a href="https://www.linkedin.com/in/deepfx" target="_blank"><img src="images/linkedin.png" alt="Contacto Raúl Trueba"></a>
+            <a href="https://github.com/deepsodome" target="_blank"><img src="images/github.png" alt="Perfil Raúl Trueba Github"></a>
+            <a><img src="images/one.png" alt="Contacto Raúl Trueba" width="36" height="36"></a>
+            <a><img src="images/logoalura.svg" alt="Contacto Raúl Trueba" width="32" height="32"></a>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
