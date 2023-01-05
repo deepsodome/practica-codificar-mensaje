@@ -38,7 +38,7 @@
 
 <div>
   <div align="center"> 
-    <h2>Escritorio</h2>
+    <h2>PC de escritorio</h2>
     <img src="https://parasmarthome.online/capturas/escritorio1.jpg" alt="screenshot" />
   </div>
   <div align="center"> 
