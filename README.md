@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://parasmarthome.online/encriptador/images/preview01.jpg" alt="logo" width="940" height="auto" />
+  <img src="https://parasmarthome.online/encriptador/images/preview00.jpg" alt="logo" width="940" height="auto" />
   <h1>Encriptado de mensjaes y enviar por App</h1>
   
   <p>
