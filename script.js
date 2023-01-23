@@ -48,7 +48,7 @@ function encriptado() {
             swal(
                 {
                     title: "¡ERROR!",
-                    text: "Mensaje inválido..\n Usa letras minúzculas y sin acentos.",
+                    text: "Mensaje inválido..\n Usa letras minúsculas y sin acentos.",
                     icon: "error",
                     button: "OK",
                 }
@@ -103,7 +103,7 @@ function desencriptar() {
             swal(
             {
                 title: "¡ERROR!",
-                text: "Mensaje inválido..\n Usa letras minuzculas y sin acentos.",
+                text: "Mensaje inválido..\n Usa letras minúsculas y sin acentos.",
                 icon: "error",
                 button: "OK",
             }

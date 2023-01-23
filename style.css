@@ -158,6 +158,11 @@ body{
     margin: 30px 0;
     border-radius: 10px;
     cursor: pointer;
+    visibility: hidden" 
+}
+
+.seccion-bcopiar{
+    visibility: hidden;
 }
 
 .seccion-boton-enviar-mensaje{
