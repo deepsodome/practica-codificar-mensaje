@@ -10,7 +10,7 @@
   <br />
 <h1>Visitar página</h1>
 <button onclick="location.href='http://www.example.com'" type="button"><h2>
-         https://deepsodome.github.io/codificar-mensaje/</h2></button>
+         https://deepsodome.github.io/04-fecha-mundial-futbol-javascript/</h2></button>
 
 <br />
   </div>
